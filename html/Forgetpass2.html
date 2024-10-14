@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>BIG RIG DRIVING SCHOOL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="h-[100px]">
+        <!-- Navbar -->
+        <nav class="bg-white shadow-xl fixed w-full px-4 py-6 md:py-4">
+            <div class="container mx-auto flex items-center justify-between">
+
+                <!-- Logo on the left -->
+                <a href="../Landingpage.html" class="">
+                    <img src="../asset/nobglogo.png" alt="" class="h-[40px] md:h-[50px] md:w-[90px] lg:h-[70px] lg:w-[120px]">
+                </a>
+
+                <!-- Navbar Links for large screens, hidden on small screens -->
+                <div class="hidden md:flex items-center md:space-x-[25px] lg:space-x-[50px]">
+                    <a href="./Aboutus.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">About</a>
+                    <a href="./Pricing.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Pricing</a>
+                    <a href="#" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Testimonials</a>
+                    <a href="./Contact.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Contact</a>
+                </div>
+
+                <!-- Get Started button for large screens -->
+                <div class="hidden md:flex">
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+                        <a href="./Registration.html">Get Started</a>
+                        </button>
+                </div>
+
+                <!-- Toggler button for mobile screens -->
+                <div class="md:hidden flex items-center">
+                    <button id="navbar-toggler" class="text-[#333333] focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu, positioned over other content (absolute positioning) -->
+            <div id="navbar-menu" class="absolute inset-x-0 top-12 bg-white bg-opacity-50 text-white p-4 hidden md:hidden flex flex-col space-y-4 z-50">
+                <a href="./Aboutus.html" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">About</a>
+                <a href="./Pricing.html" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">Pricing</a>
+                <a href="#" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">Testimonials</a>
+                <a href="./Contact.html" class="text-[#333333] text-[15px] hover:text-[#FF0000]">Contact</a>
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55 ">
+                    <a href="./Registration.html">Get Started</a>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+
+<!-- body begin -->
+<div class=" mt-24 lg:mt-32 mx-6 md:mx-12 lg:mx-80 lg:px-32">
+    <div class="flex w-full place-content-center">
+        <div>
+            <h4 class="text-[#333333] font-bold  text-[24px] tracking-wider text-center">Enter New Password</h4>
+            <p class="text-[#555555] leading-3 md:leading-4 lg:leading-5 mt-3 text-[10px] md:text-[12px] lg:text-[16px] font-medium text-center">Enter your email address below and we’ll get<br>
+                you back on  track.
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-20 lg:mt-24">
+        <div class=" w-full">
+            <label for="" class="text-[#333333] font-medium text-[16px]">New Password</label>
+            <input type="email" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-4 text-sm rounded-[15px] outline-none">
+        </div>
+
+        <div class=" w-full mt-4">
+            <label for="" class="text-[#333333] font-medium text-[16px]">Confirm Password</label>
+            <input type="email" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-4 text-sm rounded-[15px] outline-none">
+        </div>
+        
+        
+
+        <div class="mt-12 lg:mt-20">
+            <div class="flex place-content-center w-full">
+                <a href="./Forgetpass3.html" class="font-bold text-[16px] text-white bg-[#EE0000] h-fit py-2.5 px-28 tracking-wider rounded-[30px]">Submit</a>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    <!-- ended -->
+
+
+
+     <!-- footer -->
+     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-[#333333] mt-20 pt-20 pb-44 px-4 md:pl-16 md:pr-12">
+        <div class="">
+            <h4 class="">
+                <img src="../asset/nobglogo.png" alt="" class="h-[65px] w-[100px] lg:h-[70px] lg:w-[120px]">
+            </h4>
+            <p class="text-white text-[12px] font-medium mt-3 text-opacity-80">Transform your driving skills<br> 
+                with our professional drivers.</p>
+        </div>
+
+        <!-- 22 -->
+        <div class="grid grid-cols-3 md:grid-cols-2 ">
+            <div>
+                <h4 class="text-white text-[24px] font-bold font-serif mb-8">LINKS </h4>
+                <div class="">
+                    <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Programs</a></p>
+                    <p class="mb-2"><a href="./Aboutus.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">About Us</a></p>
+                    <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Career</a></p>
+                    <p class="mb-2"><a href="./Pricing.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">Pricing</a></p>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <h4 class="text-white text-[24px] font-bold font-serif mb-8">ADDRESS</h4>
+                <div>
+                    <div class="flex  mb-4">
+                        <img src="../asset/fmail.png" alt="" class="h-fit my-auto">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">Bigrigschool@gmail.com</p>
+                    </div>
+                    <div class="flex mb-4">
+                        <img src="../asset/fcontact.png" alt="" class="h-fit my-auto">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">080-000-000-00</p>
+                    </div>
+                    <div class="flex  mb-2">
+                        <img src="../asset/flocation.png" alt="" class="h-fit my-auto pl-2">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">1345, LOREM IPSUM,<br> 
+                            LOREM, LOREM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 333 -->
+        <div class="">
+            <h4 class="text-white text-[24px] font-bold font-serif mb-8">NEWSLETTER</h4>
+
+            <div class="bg-white flex px-2 rounded-[15px]">
+                <input type="email" name="" id="" placeholder="Enter your email" class="h-fit rounded-[15px] px-1 focus:ring-0 focus:outline-none ring-0 my-auto py-4 w-full placeholder:text-black placeholder:text-[12px]">
+                <img src="../asset/fright.png" alt="" class="h-fit my-auto bg-[#EE0000] py-3 px-4 rounded-[10px]">
+            </div>
+        </div>
+   </div>
+   <!--  -->
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

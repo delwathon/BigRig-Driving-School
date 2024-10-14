@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>BIG RIG DRIVING SCHOOL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="h-[100px] z-50">
+        <!-- Navbar -->
+        <nav class="bg-white shadow-xl fixed z-50 w-full px-4 py-6 md:py-4">
+            <div class="container mx-auto flex items-center justify-between">
+
+                <!-- Logo on the left -->
+                <a href="../Landingpage.html" class="">
+                    <img src="../asset/nobglogo.png" alt="" class="h-[40px] md:h-[50px] md:w-[90px] lg:h-[70px] lg:w-[120px]">
+                </a>
+
+                <!-- Navbar Links for large screens, hidden on small screens -->
+                <div class="hidden md:flex items-center md:space-x-[25px] lg:space-x-[50px]">
+                    <a href="./Aboutus.html" class="text-[#FF0000] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">About</a>
+                    <a href="./Pricing.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Pricing</a>
+                    <a href="#" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Testimonials</a>
+                    <a href="./Contact.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Contact</a>
+                </div>
+
+                <!-- Get Started button for large screens -->
+                <div class="hidden md:flex">
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+                        <a href="./Registration.html">Get Started</a>
+                        </button>
+                </div>
+
+                <!-- Toggler button for mobile screens -->
+                <div class="md:hidden flex items-center">
+                    <button id="navbar-toggler" class="text-[#333333] focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu, positioned over other content (absolute positioning) -->
+            <div id="navbar-menu" class="absolute inset-x-0 top-12 bg-white bg-opacity-50 text-white p-4 hidden md:hidden flex flex-col space-y-4 z-50">
+                <a href="./Aboutus.html" class="text-[#FF0000] text-[15px] hover:text-[#FF0000] ">About</a>
+                <a href="./Pricing.html" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">Pricing</a>
+                <a href="#" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">Testimonials</a>
+                <a href="./Contact.html" class="text-[#333333] text-[15px] hover:text-[#FF0000]">Contact</a>
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55 ">
+                    <a href="./Registration.html">Get Started</a>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+
+<!-- body begin -->
+    <!-- about us -->
+    <div class="mt-12">
+        <div class="w-full flex place-content-center">
+            <div>
+                <h4 class="text-[#333333] font-serif text-[18px] md:text-[26px] lg:text-[32px] font-mesium">About Us</h4>
+                <hr class="border-[3px] border-[#EE0000]">
+            </div>
+        </div>
+        <div class=" mb-8 mt-8 lg:mt-20 px-4 md:px-8 lg:px-24 ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="lg:mt-8">
+                    <h4 class="text-[#333333] text-[20px] md:text-[23px] font-bold lg:w-[591px] mt-8 lg:mt-[35px]">We’ve Great Driving Experience With Our qualified
+                        instructors</h4>
+                    <p class="text-[13px] md:text-[15px] text-[#333333] lg:w-[598px] font-medium mt-4 ">At Big Rig, we pride ourselves in providing extensive training experience and
+                        we’re committed in providing a successful experience to our students. Our 
+                        qualified instructors with versatile knowledge  and expertise in different 
+                        services that we offer  will guide you through every sections of our programs.
+                        With our training , you’ll not only learn how to drive but also to know the rules
+                        of the road, gain confidence and navigate you to your driving goals.</p>
+                    
+    
+                </div>
+                <div class="lg:border-l-[5px] border-t-[3px] lg:border-t-[0px] pt-12 pl-12 pb-16 shadow-xl border-gray-300 bg-[#333333]">
+                    <h4 class="text-white text-[18px] font-medium tracking-wide mb-8">Why You Should Choose Us?</h4>
+                    <div class="flex h-fit gap-4 mb-4">
+                        <img src="../asset/a1.png" alt="" class="my-auto h-fit">
+                        <p class="text-white text-[14px] font-normal h-fit my-auto">Affordable Fees</p>
+                    </div>
+                    <div class="flex h-fit gap-4 mb-4">
+                        <img src="../asset/a2.png" alt="" class="my-auto h-fit">
+                        <p class="text-white text-[14px] font-normal h-fit my-auto">Perfect Timing</p>
+                    </div>
+                    <div class="flex h-fit gap-4 mb-4">
+                        <img src="../asset/a3.png" alt="" class="my-auto h-fit">
+                        <p class="text-white text-[14px] font-normal h-fit my-auto">Approved Institute</p>
+                    </div>
+    
+                    <div class="flex h-fit gap-4 mb-4">
+                        <img src="../asset/a4.png" alt="" class="my-auto h-fit">
+                        <p class="text-white text-[14px] font-normal h-fit my-auto">Experienced and Trusted</p>
+                    </div>
+    
+                    <div class="flex h-fit gap-4 mb-4">
+                        <img src="../asset/a5.png" alt="" class="my-auto h-fit">
+                        <p class="text-white text-[14px] font-normal h-fit my-auto">Class Formats</p>
+                    </div>
+                    <div class="flex h-fit gap-4">
+                        <img src="../asset/a6.png" alt="" class="my-auto h-fit">
+                        <p class="text-white text-[14px] font-normal h-fit my-auto">Best Safety Measures</p>
+                    </div>
+                </div>
+            </div>
+    
+         </div> 
+        
+    </div>
+    <!-- qbout end -->
+
+    <!-- our lerning -->
+    <div class="mx-12 mt-12 lg:mt-20">
+        <div class="flex place-content-center w-full pt-12 lg:pl-[300px]">
+            <div>
+                <h4 class="text-[#333333] text-[20px] md:text-[30px] lg:text-[32px] font-bold font-serif">Our Learning Process</h4>
+                <hr class="border-[3px] border-[#EE0000] w-[36%]">
+            </div>
+        </div>
+        <div class="w-full flex place-content-center mt-16 lg:mt-24">
+            <img src="../asset/designtoimg.png" alt="" class="">
+        </div>
+        
+      </div>
+      <!-- end -->
+
+      <!-- instruction -->
+      <div class="mb-16 lg:mb-24 ">
+        <div class="flex place-content-center w-full mt-12 lg:mt-24">
+            <div>
+                <h4 class="text-[#333333] text-[20px] md:text-[30px] lg:text-[32px] font-bold font-serif">Our Instructors</h4>
+                <hr class="border-[3px] border-[#EE0000] w-[52%]">
+            </div>
+        </div>
+
+        <!-- slider here -->
+         <div class="mt-12 lg:mt-20">
+            <div class=" relative">
+                <div id="scrollable-div" class=" flex gap-12 md:gap-20 mx-8 md:mx-24 lg:mx-44 overflow-auto hide-scrollbar">
+
+                    <div class="w-fit flex-none    flex place-content-center">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="w-fit flex-none   ">
+                        <div>
+                            <img src="../asset/maryjoe.png" alt="">
+                            <div class="w-full  flex place-content-center mt-3">
+                                <p class="text-[#333333] text-[24px] font-bold ">Jane Doe</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" absolute right-4 md:right-16 lg:right-24 top-20">
+                    <button onclick="scrollDiv('right')">
+                        <img src="../asset/fright.png" alt="" class="bg-[#333333] w-fit p-2 rounded-full">
+                    </button>
+                    
+                </div>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- end -->
+
+       <!-- customer -->
+       <div class="mt-12">
+        <div class="w-full flex place-content-center">
+            <div class="w-fit md:pl-[200px] lg:pl-[300px]">
+                <h4 class="text-[#333333] font-serif text-[18px] md:text-[26px] lg:text-[32px] font-bold">Customer’s Certfication</h4>
+                <hr class="border-[3px] border-[#EE0000] w-[34%]">
+            </div>
+        </div>
+        <div class="flex place-content-center mt-10 md:mt-16 lg:mt-20 mx-8 lg:mx-0">
+            <img src="../asset/customercert.png" alt="">
+        </div>
+      </div>
+      <!-- end -->
+
+
+      <!-- join out team -->
+      <div class="flex w-full place-content-center mt-16 lg:mt-36 px-4 md:px-8">
+        <div class="relative">
+            
+            <img src="../asset/jointeamimg.png" alt="" class="rounded-[30px] h-[224px] md:h-[250px] lg:h-auto  z-0">
+    
+            
+            <div class="absolute top-0 w-full h-full z-20 grid grid-cols-1 md:grid-cols-3 md:px-8 lg:px-20">
+                <div class="md:col-span-2  w-full md:place-content-center mt-8 md:mt-0">
+                    <div>
+                        <h4 class="text-white text-[16px] md:text-[22px] lg:text-[33px] font-bold font-serif text-center lg:leading-10 tracking-wider capitalize">Join our team of experienced<br>drivers</h4>
+                        <p class="text-center text-white text-[8px] md:text-[10px] lg:text-[16px] font-medium mt-4">Are you passionate about driving and teaching the next generation<br> of confident drivers? Apply now!</p>
+                    </div>
+                </div>
+                <div class=" w-full md:place-content-center">
+                    <div class="w-full flex place-content-center md:place-content-end">
+                        <button class="text-[#EE0000] h-fit font-bold tracking-wider text-[10px] md:text-[12] lg:text-[16px] border-2 border-[#EE0000] rounded-[30px] py-2 px-12 cursor-pointer">
+                            <a href="./Contact.html" >Contact Us</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+<!-- ended -->
+
+
+
+     <!-- footer -->
+     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-[#333333] mt-20 pt-20 pb-44 px-4 md:pl-16 md:pr-12">
+        <div class="">
+            <h4 class="">
+                <img src="../asset/nobglogo.png" alt="" class="h-[65px] w-[100px] lg:h-[70px] lg:w-[120px]">
+            </h4>
+            <p class="text-white text-[12px] font-medium mt-3 text-opacity-80">Transform your driving skills<br> 
+                with our professional drivers.</p>
+        </div>
+
+        <!-- 22 -->
+        <div class="grid grid-cols-3 md:grid-cols-2 ">
+            <div>
+                <h4 class="text-white text-[24px] font-bold font-serif mb-8">LINKS </h4>
+                <div class="">
+                    <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Programs</a></p>
+                    <p class="mb-2"><a href="./Aboutus.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">About Us</a></p>
+                    <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Career</a></p>
+                    <p class="mb-2"><a href="./Pricing.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">Pricing</a></p>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <h4 class="text-white text-[24px] font-bold font-serif mb-8">ADDRESS</h4>
+                <div>
+                    <div class="flex  mb-4">
+                        <img src="../asset/fmail.png" alt="" class="h-fit my-auto">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">Bigrigschool@gmail.com</p>
+                    </div>
+                    <div class="flex mb-4">
+                        <img src="../asset/fcontact.png" alt="" class="h-fit my-auto">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">080-000-000-00</p>
+                    </div>
+                    <div class="flex  mb-2">
+                        <img src="../asset/flocation.png" alt="" class="h-fit my-auto pl-2">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">1345, LOREM IPSUM,<br> 
+                            LOREM, LOREM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 333 -->
+        <div class="">
+            <h4 class="text-white text-[24px] font-bold font-serif mb-8">NEWSLETTER</h4>
+
+            <div class="bg-white flex px-2 rounded-[15px]">
+                <input type="email" name="" id="" placeholder="Enter your email" class="h-fit rounded-[15px] px-1 focus:ring-0 focus:outline-none ring-0 my-auto py-4 w-full placeholder:text-black placeholder:text-[12px]">
+                <img src="../asset/fright.png" alt="" class="h-fit my-auto bg-[#EE0000] py-3 px-4 rounded-[10px]">
+            </div>
+        </div>
+   </div>
+   <!--  -->
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

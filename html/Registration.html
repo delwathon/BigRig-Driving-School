@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>BIG RIG DRIVING SCHOOL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="h-[100px]">
+        <!-- Navbar -->
+        <nav class="bg-white shadow-xl fixed w-full px-4 py-6 md:py-4">
+            <div class="container mx-auto flex items-center justify-between">
+
+                <!-- Logo on the left -->
+                <a href="../Landingpage.html" class="">
+                    <img src="../asset/nobglogo.png" alt="" class="h-[40px] md:h-[50px] md:w-[90px] lg:h-[70px] lg:w-[120px]">
+                </a>
+
+                <!-- Navbar Links for large screens, hidden on small screens -->
+                <div class="hidden md:flex items-center md:space-x-[25px] lg:space-x-[50px]">
+                    <a href="./Aboutus.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">About</a>
+                    <a href="./Pricing.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Pricing</a>
+                    <a href="#" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Testimonials</a>
+                    <a href="./Contact.html" class="text-[#333333] md:text-[14px] lg:text-[18px] hover:text-[#FF0000] ">Contact</a>
+                </div>
+
+                <!-- Get Started button for large screens -->
+                <div class="hidden md:flex">
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+                        <a href="./Registration.html">Get Started</a>
+                        </button>
+                </div>
+
+                <!-- Toggler button for mobile screens -->
+                <div class="md:hidden flex items-center">
+                    <button id="navbar-toggler" class="text-[#333333] focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu, positioned over other content (absolute positioning) -->
+            <div id="navbar-menu" class="absolute inset-x-0 top-12 bg-white bg-opacity-50 text-white p-4 hidden md:hidden flex flex-col space-y-4 z-50">
+                <a href="./Aboutus.html" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">About</a>
+                <a href="./Pricing.html" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">Pricing</a>
+                <a href="#" class="text-[#333333] text-[15px] hover:text-[#FF0000] ">Testimonials</a>
+                <a href="./Contact.html" class="text-[#333333] text-[15px] hover:text-[#FF0000]">Contact</a>
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55 ">
+                    <a href="./Registration.html">Get Started</a>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+
+<!-- body begin -->
+    <div class=" mt-20 mx-6 md:mx-12 lg:mx-80 lg:px-16">
+        <div class="flex w-full place-content-center">
+            <div>
+                <h4 class="text-[#333333] font-bold font-serif text-[24px] tracking-wider text-center">User Registration</h4>
+                <p class="text-[#555555] leading-3 md:leading-4 lg:leading-5 mt-3 text-[10px] md:text-[12px] lg:text-[16px] font-medium text-center">Please fill out the form below to  create your account and<br>
+                    gain access to our comprehensive range of  courses and<br>
+                    resources.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-20">
+            <div class="flex items-center justify-center md:items-start md:justify-start w-full">
+                <label for="file-upload" class="cursor-pointer">
+                    <div class="border-2 border-[#C1C9CF]  rounded-lg w-64 h-64 flex flex-col items-center justify-center hover:bg-gray-50 transition">
+                        <!-- Upload icon -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-500 mb-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 3a2 2 0 012-2h10a2 2 0 012 2v4h-2V4H5v12h6v2H5a2 2 0 01-2-2V3zm9 10v-4h2v4h3l-4 4-4-4h3z" clip-rule="evenodd"/>
+                        </svg> -->
+                        <i class='bx bxs-image-alt mb-2 text-[24px] text-[#333333]' ></i>
+        
+                        <!-- Text -->
+                        <p class="text-xs font-bold tracking-wider">
+                            <span class=" text-[#333333]">Click to upload</span>
+                            <span class="text-[#333333]">(JPG, PNG)</span>
+                        </p>
+                    </div>
+        
+                    <!-- Hidden input file -->
+                    <input id="file-upload" type="file" accept="image/jpeg, image/png" class="hidden">
+                </label>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 mt-12 lg:mt-20">
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">First Name</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Last Name</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Email</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Phone Number</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-2 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Gender</label>
+                <select name="" id="" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Age</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Height</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Weight</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Category</label>
+                <select name="" id="" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div class=" w-full">
+                <label for="" class="text-[#333333] font-medium text-[16px]">Address</label>
+                <input type="text" class="w-full border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+            </div>
+
+            
+        </div>
+
+        <div class="border-2 border-[#C1C9CF] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 rounded-[15px] py-3 px-6 mt-6">
+            <div>
+                <p class="text-[#333333] font-medium text-[16px]">Select Driving Objective(s)</p>
+            </div>
+            <div class=" grid grid-cols-2 gap-y-6">
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">Truck</label>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">Forklift</label>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">School Bus</label>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">Regular Vehicles</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-2 border-[#C1C9CF] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 rounded-[15px] py-3 px-6 mt-6">
+            <div>
+                <p class="text-[#333333] font-medium text-[16px]">Do you have a driver license?</p>
+            </div>
+            <div class=" grid grid-cols-2 gap-y-6">
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">Yes</label>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">No</label>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="border-2 border-[#C1C9CF] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 rounded-[15px] py-3 px-6 mt-6">
+            <div>
+                <p class="text-[#333333] font-medium text-[16px]">Do you use Eye Glasses?</p>
+            </div>
+            <div class=" grid grid-cols-2 gap-y-6">
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">Yes</label>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-2 border-[#C1C9CF] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 rounded-[15px] py-3 px-6 mt-6">
+            <div>
+                <p class="text-[#333333] font-medium text-[16px]">How many years of driving experience?</p>
+            </div>
+            <div class=" grid grid-cols-2 gap-y-6">
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">3 Months</label>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">6 Months & Above</label>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="border-2 border-[#C1C9CF] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 rounded-[15px] py-3 px-6 mt-6">
+            <div>
+                <p class="text-[#333333] font-medium text-[16px]">Any Physical Challenges?
+                    <br>If yes,state it</p>
+            </div>
+            <div class=" grid grid-cols-2 gap-y-6 h-fit">
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">Yes</label>
+                </div>
+
+                <div class="flex gap-4">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">No</label>
+                </div>
+
+                
+            </div>
+            <input type="text" class="w-full col-span-2 border-2 border-[#C1C9CF] mt-1 px-4 py-3 text-sm rounded-[15px] outline-none">
+        </div>
+
+        <div class="border-2 border-[#C1C9CF] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0 rounded-[15px] py-3 px-6 mt-6">
+            <div>
+                <p class="text-[#333333] font-medium text-[16px]">Select payment plan</p>
+            </div>
+            <div class=" grid grid-cols-2 gap-y-6">
+                <div class="flex gap-4 col-span-2">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">50% (with an interest rate of 5%)</label>
+                </div>
+
+                <div class="flex gap-4 col-span-2">
+                    <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+                    <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">100%</label>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="flex gap-4 mt-4">
+            <input type="checkbox" name="" id="" class="border border-[#C1C9CF] w-[20px] h-[20px] my-auto">
+            <label for="" class="text-[#333333] font-medium text-[14px] h-fit my-auto">I agree to Terms of Service</label>
+        </div>
+
+        <div class="mt-20 lg:mt-24">
+            <div class="flex place-content-center w-full">
+                <button class="font-bold text-[16px] text-white bg-[#EE0000] h-fit py-2.5 px-24 tracking-wider rounded-[30px]">Register</button>
+            </div>
+            <p class="text-[#333333] font-medium mt-2 text-[12px] text-center">Have an account <a href="./Login.html" class="text-[#EE0000]">? Login</a></p>
+        </div>
+    </div>
+    <!-- ended -->
+
+
+
+     <!-- footer -->
+     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-[#333333] mt-20 pt-20 pb-44 px-4 md:pl-16 md:pr-12">
+        <div class="">
+            <h4 class="">
+                <img src="../asset/nobglogo.png" alt="" class="h-[65px] w-[100px] lg:h-[70px] lg:w-[120px]">
+            </h4>
+            <p class="text-white text-[12px] font-medium mt-3 text-opacity-80">Transform your driving skills<br> 
+                with our professional drivers.</p>
+        </div>
+
+        <!-- 22 -->
+        <div class="grid grid-cols-3 md:grid-cols-2 ">
+            <div>
+                <h4 class="text-white text-[24px] font-bold font-serif mb-8">LINKS </h4>
+                <div class="">
+                    <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Programs</a></p>
+                    <p class="mb-2"><a href="./Aboutus.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">About Us</a></p>
+                    <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Career</a></p>
+                    <p class="mb-2"><a href="./Pricing.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">Pricing</a></p>
+                </div>
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <h4 class="text-white text-[24px] font-bold font-serif mb-8">ADDRESS</h4>
+                <div>
+                    <div class="flex  mb-4">
+                        <img src="../asset/fmail.png" alt="" class="h-fit my-auto">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">Bigrigschool@gmail.com</p>
+                    </div>
+                    <div class="flex mb-4">
+                        <img src="../asset/fcontact.png" alt="" class="h-fit my-auto">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">080-000-000-00</p>
+                    </div>
+                    <div class="flex  mb-2">
+                        <img src="../asset/flocation.png" alt="" class="h-fit my-auto pl-2">
+                        <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">1345, LOREM IPSUM,<br> 
+                            LOREM, LOREM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 333 -->
+        <div class="">
+            <h4 class="text-white text-[24px] font-bold font-serif mb-8">NEWSLETTER</h4>
+
+            <div class="bg-white flex px-2 rounded-[15px]">
+                <input type="email" name="" id="" placeholder="Enter your email" class="h-fit rounded-[15px] px-1 focus:ring-0 focus:outline-none ring-0 my-auto py-4 w-full placeholder:text-black placeholder:text-[12px]">
+                <img src="../asset/fright.png" alt="" class="h-fit my-auto bg-[#EE0000] py-3 px-4 rounded-[10px]">
+            </div>
+        </div>
+   </div>
+   <!--  -->
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

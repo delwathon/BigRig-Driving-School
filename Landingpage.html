@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>BIG RIG DRIVING SCHOOL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+   
+
+    <div class="relative h-[330px]  md:h-[600px] lg:h-[850px]">
+        <!-- Navbar -->
+        <nav class="bg-transparent p-4">
+            <div class="container mx-auto flex items-center justify-between">
+
+                <!-- Logo on the left -->
+                <a href="./Landingpage.html" class="">
+                    <img src="./asset/nobglogo.png" alt="" class="h-[40px] md:h-[50px] md:w-[90px] lg:h-[70px] lg:w-[120px]">
+                </a>
+
+                <!-- Navbar Links for large screens, hidden on small screens -->
+                <div class="hidden md:flex items-center md:space-x-[25px] lg:space-x-[50px]">
+                    <a href="./html/Aboutus.html" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">About</a>
+                    <a href="./html/Pricing.html" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">Pricing</a>
+                    <a href="#" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">Testimonials</a>
+                    <a href="./html/Contact.html" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">Contact</a>
+                </div>
+
+                <!-- Get Started button for large screens -->
+                <div class="hidden md:flex">
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+                        <a href="./html/Registration.html">Get Started</a>
+                        </button>
+                </div>
+
+                <!-- Toggler button for mobile screens -->
+                <div class="md:hidden flex items-center">
+                    <button id="navbar-toggler" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu, positioned over other content (absolute positioning) -->
+            <div id="navbar-menu" class="absolute inset-x-0 top-12 bg-gray-900 bg-opacity-50 text-white p-4 hidden md:hidden flex flex-col space-y-4 z-50">
+                <a href="./html/Aboutus.html" class="text-white text-[15px] hover:text-white hover:text-opacity-30">About</a>
+                <a href="./html/Pricing.html" class="text-white text-[15px] hover:text-white hover:text-opacity-30">Pricing</a>
+                <a href="#" class="text-white text-[15px] hover:text-white hover:text-opacity-30">Testimonials</a>
+                <a href="./html/Contact.html" class="text-white text-[15px] hover:text-white hover:text-opacity-30">Contact</a>
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55 ">
+                    <a href="./html/Registration.html">Get Started</a>
+                </button>
+            </div>
+        </nav>
+
+        <!-- end navbar -->
+
+
+        <div class="flex place-content-center px-6 mt-2 md:mt-28 lg:mt-[250px]">
+            <div>
+                <h4 class="text-[18px] md:text-[28px] lg:text-[36px] font-serif font-medium text-white text-center">Master the Road Ahead With Big Rig Driving School</h4>
+                <div class="flex place-content-center">
+                    <p class="text-[8px] text-white text-opacity-40 text-center my-3  md:w-[590px] md:text-[14px] lg:w-[690px] lg:text-[16px] ">Join our dedicated team and get hand-on experience  with truck, forklift, school
+                        bus and regular vehicles. Register with us and embark on a journey towards a 
+                    brighter future behind the wheel.</p>
+                </div>
+                <div class="flex place-content-center">
+                    <button class="bg-[#FF0000] text-white px-10 py-2 lg:py-3 rounded-full text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55">
+                        <a href="./html/Registration.html">Get Started</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute top-0 -z-10 w-full h-auto ">
+            <img src="./asset/navbarimg.png" alt="" class="w-full h-auto lg:h-[820px]">
+        </div>
+    </div>
+
+
+    <div class="py-8 px-4 md:px-8 lg:px-24">
+        <div class="flex place-content-center">
+            <div>
+                <h4 class="font-serif text-[18px] md:text-[20px] lg:text-[32px] font-bold text-[#333333] tracking-wider">What we offer?</h4>
+                <hr class="border-[3px] border-[#FF0000] w-20 lg:w-36 mt-1">
+            </div>
+        </div>
+
+
+        <div>
+            <div class="slider-container relative w-full max-w-screen-xl mx-auto mt-10">
+                <div class="slider flex w-full  lg:gap-6">
+                    <!-- Slider Item 1 -->
+                    <div class="slider-item flex-none w-full sm:w-1/2  lg:w-[400px]  rounded-[15px] border-[1px] border-[#808080] h-fit pt-4 pb-8 flex place-content-center">
+                        <div class="mx-4 md:mx-6 lg:mx-0">
+                            <h4 class="text-[#333333] font-bold  text-[24px]">Truck Driving </h4>
+                            <img src="./asset/truck1.png" alt="" class="my-4">
+                            <p class="text-[#333333] font-bold  text-[16px] mb-3">Features</p>
+                            <ul class="list-disc list-inside ml-2 space-y-2">
+                                <li class=" text-[12px] font-normal text-[#333333]">Comprehensive training for various types of forklift.</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Hands-on experience .</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Beginners and professional friendly</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Driving techniques and safety measures</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Certificate upon completion</li>
+                            </ul>
+                            <p class="text-[#333333] font-bold text-[16px] mt-4">Requirements</p>
+                            <div class="pb-6">
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Valid driver’s licence</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Driving experience</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Must be above 18 years old</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Ability to pass physical and drug screening.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Slider Item 2 -->
+                    <div class="slider-item flex-none w-full sm:w-1/2  lg:w-[400px]  rounded-[15px] border-[1px] border-[#808080] h-fit pt-4 pb-8 flex place-content-center">
+                        <div class="mx-4 md:mx-6 lg:mx-0">
+                            <h4 class="text-[#333333] font-bold  text-[24px]">Forklift Driving </h4>
+                            <img src="./asset/fork1.png" alt="" class="my-4">
+                            <p class="text-[#333333] font-bold  text-[16px] mb-3">Features</p>
+                            <ul class="list-disc list-inside ml-2 space-y-2">
+                                <li class=" text-[12px] font-normal text-[#333333]">Comprehensive training for various types of forklift.</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Hands-on experience .</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Beginners and professional friendly</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Driving techniques and safety measures</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Certificate upon completion</li>
+                            </ul>
+                            <p class="text-[#333333] font-bold text-[16px] mt-4">Requirements</p>
+                            <div class="pb-6">
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Valid driver’s licence</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Driving experience</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Must be above 18 years old</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Ability to pass physical and drug screening.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Slider Item 3 -->
+                    <div class="slider-item flex-none w-full sm:w-1/2  lg:w-[400px]  rounded-[15px] border-[1px] border-[#808080] h-fit pt-4 pb-8 flex place-content-center">
+                        <div class="mx-4 md:mx-6 lg:mx-0">
+                            <h4 class="text-[#333333] font-bold  text-[24px]">School Bus Driving </h4>
+                            <img src="./asset/bus1.png" alt="" class="my-4">
+                            <p class="text-[#333333] font-bold  text-[16px] mb-3">Features</p>
+                            <ul class="list-disc list-inside ml-2 space-y-2">
+                                <li class=" text-[12px] font-normal text-[#333333]">Comprehensive training for various types of forklift.</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Hands-on experience .</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Beginners and professional friendly</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Driving techniques and safety measures</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Certificate upon completion</li>
+                            </ul>
+                            <p class="text-[#333333] font-bold text-[16px] mt-4">Requirements</p>
+                            <div class="pb-6">
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Valid driver’s licence</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Driving experience</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Must be above 18 years old</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Ability to pass physical and drug screening.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Slider Item 4 -->
+                    <div class="slider-item flex-none w-full sm:w-1/2  lg:w-[400px]  rounded-[15px] border-[1px] border-[#808080] h-fit pt-4 pb-8 flex place-content-center">
+                        <div class="mx-4 md:mx-6 lg:mx-0">
+                            <h4 class="text-[#333333] font-bold  text-[24px]">Truck Driving </h4>
+                            <img src="./asset/truck1.png" alt="" class="my-4">
+                            <p class="text-[#333333] font-bold  text-[16px] mb-3">Features</p>
+                            <ul class="list-disc list-inside ml-2 space-y-2">
+                                <li class=" text-[12px] font-normal text-[#333333]">Comprehensive training for various types of forklift.</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Hands-on experience .</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Beginners and professional friendly</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Driving techniques and safety measures</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Certificate upon completion</li>
+                            </ul>
+                            <p class="text-[#333333] font-bold text-[16px] mt-4">Requirements</p>
+                            <div class="pb-6">
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Valid driver’s licence</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Driving experience</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Must be above 18 years old</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Ability to pass physical and drug screening.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Slider Item 5 -->
+                    <div class="slider-item flex-none w-full sm:w-1/2  lg:w-[400px]  rounded-[15px] border-[1px] border-[#808080] h-fit pt-4 pb-8 flex place-content-center">
+                        <div class="mx-4 md:mx-6 lg:mx-0">
+                            <h4 class="text-[#333333] font-bold  text-[24px]">Forklift Driving </h4>
+                            <img src="./asset/fork1.png" alt="" class="my-4">
+                            <p class="text-[#333333] font-bold  text-[16px] mb-3">Features</p>
+                            <ul class="list-disc list-inside ml-2 space-y-2">
+                                <li class=" text-[12px] font-normal text-[#333333]">Comprehensive training for various types of forklift.</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Hands-on experience .</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Beginners and professional friendly</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Driving techniques and safety measures</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Certificate upon completion</li>
+                            </ul>
+                            <p class="text-[#333333] font-bold text-[16px] mt-4">Requirements</p>
+                            <div class="pb-6">
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Valid driver’s licence</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Driving experience</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Must be above 18 years old</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Ability to pass physical and drug screening.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Slider Item 6 -->
+                    <div class="slider-item flex-none w-full sm:w-1/2  lg:w-[400px]  rounded-[15px] border-[1px] border-[#808080] h-fit pt-4 pb-8 flex place-content-center">
+                        <div class="mx-4 md:mx-6 lg:mx-0">
+                            <h4 class="text-[#333333] font-bold  text-[24px]">School Bus Driving </h4>
+                            <img src="./asset/bus1.png" alt="" class="my-4">
+                            <p class="text-[#333333] font-bold  text-[16px] mb-3">Features</p>
+                            <ul class="list-disc list-inside ml-2 space-y-2">
+                                <li class=" text-[12px] font-normal text-[#333333]">Comprehensive training for various types of forklift.</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Hands-on experience .</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Beginners and professional friendly</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Driving techniques and safety measures</li>
+                                <li class=" text-[12px] font-normal text-[#333333]">Certificate upon completion</li>
+                            </ul>
+                            <p class="text-[#333333] font-bold text-[16px] mt-4">Requirements</p>
+                            <div class="pb-6">
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Valid driver’s licence</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Driving experience</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Must be above 18 years old</p>
+                                </div>
+                                <div class="flex h-fit mt-3 gap-3">
+                                    <i class='bx bx-check-circle text-[20px] text-[#333333] font-bold h-fit my-auto'></i>
+                                    <p class=" text-[12px] font-normal text-[#333333] h-fit my-auto">Ability to pass physical and drug screening.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <!-- Pagination Dots -->
+                <div class="pagination-dots">
+                    <!-- Dots will be dynamically generated -->
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!--  -->
+
+
+
+    <!-- about us -->
+     <div class="bg-[#333333] mb-8 px-4 md:px-8 lg:px-24 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+                <div class="w-fit">
+                    <h4 class="text-white font-medium font-serif text-[32px]">About  Us</h4>
+                    <hr class="border-[3px] border-[#FFFFFF]">
+                </div>
+                <h4 class="text-white text-[20px] md:text-[23px] font-medium lg:w-[591px] mt-8 lg:mt-[35px]">We’ve Great Driving Experience With Our qualified
+                    instructors</h4>
+                <p class="text-[13px] md:text-[15px] text-white lg:w-[598px] font-medium mt-4 text-opacity-70">At Big Rig, we pride ourselves in providing extensive training experience and
+                    we’re committed in providing a successful experience to our students. Our 
+                    qualified instructors with versatile knowledge  and expertise in different 
+                    services that we offer  will guide you through every sections of our programs.
+                    With our training , you’ll not only learn how to drive but also to know the rules
+                    of the road, gain confidence and navigate you to your driving goals.</p>
+                <div class="mt-8">
+                    <button class="border border-[#EE0000] text-[#EE0000] font-bold text-[14px] px-14 py-3 rounded-[30px]">
+                        <a href="./html/Aboutus.html">Learn More</a>
+                        </button>
+                </div>
+
+            </div>
+            <div class="lg:border-l-[4px] border-t-[3px] lg:border-t-[0px] pt-12 pl-12 border-[#EE0000]">
+                <h4 class="text-white text-[18px] font-medium tracking-wide mb-8">Why You Should Choose Us?</h4>
+                <div class="flex h-fit gap-4 mb-4">
+                    <img src="./asset/a1.png" alt="" class="my-auto h-fit">
+                    <p class="text-white text-[14px] font-normal h-fit my-auto">Affordable Fees</p>
+                </div>
+                <div class="flex h-fit gap-4 mb-4">
+                    <img src="./asset/a2.png" alt="" class="my-auto h-fit">
+                    <p class="text-white text-[14px] font-normal h-fit my-auto">Perfect Timing</p>
+                </div>
+                <div class="flex h-fit gap-4 mb-4">
+                    <img src="./asset/a3.png" alt="" class="my-auto h-fit">
+                    <p class="text-white text-[14px] font-normal h-fit my-auto">Approved Institute</p>
+                </div>
+
+                <div class="flex h-fit gap-4 mb-4">
+                    <img src="./asset/a4.png" alt="" class="my-auto h-fit">
+                    <p class="text-white text-[14px] font-normal h-fit my-auto">Experienced and Trusted</p>
+                </div>
+
+                <div class="flex h-fit gap-4 mb-4">
+                    <img src="./asset/a5.png" alt="" class="my-auto h-fit">
+                    <p class="text-white text-[14px] font-normal h-fit my-auto">Class Formats</p>
+                </div>
+                <div class="flex h-fit gap-4">
+                    <img src="./asset/a6.png" alt="" class="my-auto h-fit">
+                    <p class="text-white text-[14px] font-normal h-fit my-auto">Best Safety Measures</p>
+                </div>
+            </div>
+        </div>
+
+     </div> 
+     <!-- end -->
+
+
+
+     <!-- our lerning -->
+      <div class="mx-12">
+        <div class="flex place-content-center w-full pt-12 lg:pl-[300px]">
+            <div>
+                <h4 class="text-[#333333] text-[20px] md:text-[30px] lg:text-[32px] font-bold font-serif">Our Learning Process</h4>
+                <hr class="border-[3px] border-[#EE0000] w-[36%]">
+            </div>
+        </div>
+        <div class="w-full flex place-content-center mt-24">
+            <img src="./asset/designtoimg.png" alt="" class="">
+        </div>
+        
+      </div>
+      <!-- end -->
+
+      <!-- drive safe -->
+        <div class=" w-full flex place-content-center mb-12 px-4 md:px-8 mt-20">
+            <div class=" w-fit relative rounded-[10px] md:rounded-[30px]">
+                <img src="./asset/drivesafeimg.png" alt="" class="rounded-[10px] md:rounded-[30px]">
+                <div class=" absolute top-0 w-full h-full rounded-[10px] md:rounded-[30px]">
+                    <div class=" flex place-content-center w-full mt-6 md:mt-20 lg:mt-40 ">
+                        <div class=" ">
+                            <h4 class="text-white text-[12px] md:text-[26px] lg:text-[32px] font-serif italic font-bold text-center lg:w-[694px]">DRIVE SAFE WITH BIG RIG DRIVING
+                                SCHOOL</h4>
+                            <div class="flex place-content-center my-3 md:my-6">
+                                <p class="text-white text-[8px] md:text-[16px] font-medium text-center w-[250px] md:w-[524px]">We train our students safe, standard driving techniques and 
+                                practices. Feel free to reach us for an inquires</p>
+                            </div>
+                            <div class="flex place-content-center">
+                                <button class="text-[#EE0000] rounded-[30px] border border-[#EE0000] text-[8px] md:text-[14px] font-bold px-6 py-2">Request an Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- end -->
+        
+        <!-- pricing -->
+         <div class="mt-20 mb-24 ">
+            <div class="w-full flex place-content-center">
+                <div>
+                    <h4 class="text-[#333333] font-serif text-[18px] md:text-[26px] lg:text-[32px] font-bold">Pricing</h4>
+                    <hr class="border-[3px] border-[#EE0000]">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12  mx-4 md:mx-8 lg:mx-24 mt-14">
+                <!-- 111 -->
+                <div class="border border-[#808080] rounded-[15px]">
+                    <div class="bg-[#333333] rounded-t-[15px] flex place-content-center w-full py-6">
+                        <div >
+                            <p class="text-white text-[24px] font-bold mb-6 tracking-wide">Truck Driving</p>
+                            <p class="text-[#EE0000] text-[24px] font-bold  tracking-wide">#50,000 <span class="text-[12px]">Per month</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-6 ml-8">
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Theory & Practical ( Monday - Friday)</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">3 Months/ 2 hours per day</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Road & Traffic law lessons</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Manual & Automatic car lessons</p>
+                        </div>
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Basic car maintenance </p>
+                        </div>
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Certificate of completion</p>
+                        </div>
+                    </div>
+                    <div class="flex place-content-center w-full mt-12 mb-8">
+                        <button class="text-[#FF0000] font-bold text-[16px] border-2 border-[#FF0000] rounded-[30px] px-14 py-3 tracking-wider">Select Plan</button>
+                    </div>
+                </div>
+                <!-- 22 -->
+                <div class="border border-[#808080] rounded-[15px]">
+                    <div class="bg-[#333333] rounded-t-[15px] flex place-content-center w-full py-6">
+                        <div >
+                            <p class="text-white text-[24px] font-bold mb-6 tracking-wide">Forklift Driving</p>
+                            <p class="text-[#EE0000] text-[24px] font-bold  tracking-wide">#50,000 <span class="text-[12px]">Per month</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-6 ml-8">
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Theory & Practical ( Monday - Friday)</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">3 Months/ 2 hours per day</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Road & Traffic law lessons</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Manual & Automatic car lessons</p>
+                        </div>
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Basic car maintenance </p>
+                        </div>
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Certificate of completion</p>
+                        </div>
+                    </div>
+                    <div class="flex place-content-center w-full mt-12 mb-8">
+                        <button class="text-[#FF0000] font-bold text-[16px] border-2 border-[#FF0000] rounded-[30px] px-14 py-3 tracking-wider">Select Plan</button>
+                    </div>
+                </div>
+                <!-- 333 -->
+                <div class="border border-[#808080] rounded-[15px]">
+                    <div class="bg-[#333333] rounded-t-[15px] flex place-content-center w-full py-6">
+                        <div >
+                            <p class="text-white text-[24px] font-bold mb-6 tracking-wide">School Bus Driving</p>
+                            <p class="text-[#EE0000] text-[24px] font-bold  tracking-wide">#50,000 <span class="text-[12px]">Per month</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-6 ml-8">
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Theory & Practical ( Monday - Friday)</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">3 Months/ 2 hours per day</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Road & Traffic law lessons</p>
+                        </div>
+
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Manual & Automatic car lessons</p>
+                        </div>
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Basic car maintenance </p>
+                        </div>
+                        <div class="flex gap-4 mb-4">
+                            <i class='bx bx-check-circle text-[#333333] text-[24px] my-auto h-fit'></i>
+                            <p class="text-[#333333] text-[16px] font-medium my-auto h-fit">Certificate of completion</p>
+                        </div>
+                    </div>
+                    <div class="flex place-content-center w-full mt-12 mb-8">
+                        <button class="text-[#FF0000] font-bold text-[16px] border-2 border-[#FF0000] rounded-[30px] px-14 py-3 tracking-wider">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- end -->
+
+         <!-- customer -->
+          <div class="mt-12">
+            <div class="w-full flex place-content-center">
+                <div class="w-fit md:pl-[200px] lg:pl-[300px]">
+                    <h4 class="text-[#333333] font-serif text-[18px] md:text-[26px] lg:text-[32px] font-bold">Customer’s Certfication</h4>
+                    <hr class="border-[3px] border-[#EE0000] w-[34%]">
+                </div>
+            </div>
+            <div class="flex place-content-center mt-10 md:mt-16 lg:mt-20 mx-8 lg:mx-0">
+                <img src="./asset/customercert.png" alt="">
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- testimonial -->
+          <div class="mt-36 mb-20">
+            <div class="flex place-content-center">
+                <div>
+                    <h4 class="text-[#333333] font-serif text-[18px] md:text-[26px] lg:text-[32px] font-bold">Testimonials</h4>
+                    <hr class="border-[3px] border-[#EE0000] w-[62%]">
+                </div>
+            </div>
+
+            <!-- slider here!!!! -->
+            <div class=" px-6 md:px-20 lg:px-24 mt-16 ">
+                <div class="swiper mySwiper h-[400px] md:h-[420px]">
+                    <div class="swiper-wrapper h-fit">
+                        <div class="swiper-slide bg-white border border-[#808080] rounded-[15px] h-fit py-8">
+                            <div>
+                                <div class="flex gap-3 place-content-center">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                </div>
+                                <div class="flex place-content-center pt-6 pb-6 md:pb-8">
+                                    <p class="text-[#333333] text-[10px] md:text-[16px] font-medium leading-5 tracking-wide">“Thanks to their expert guidance, I not only passed my driving 
+                                        <br>test but also feel prepared to handle any situation on the road. 
+                                        <br>Big Rig is the best driving school i can recommend for all levels 
+                                        <br>of training.” 
+
+                                    </p>
+                                </div>
+                                <div class="flex place-content-center pt-2 pb-2 md:pb-4">
+                                    <div>
+                                        <div class="flex place-content-center">
+                                            <img src="./asset/testimonialimg.png" alt="">
+                                        </div>
+                                        <p class="text-[#333333] text-[14px] md:text-[16px] font-bold mt-2 text-center">John Doe</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                      <!--  -->
+                      <div class="swiper-slide bg-white border border-[#808080] rounded-[15px] h-fit py-8">
+                        <div>
+                            <div class="flex gap-3 place-content-center">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                            </div>
+                            <div class="flex place-content-center pt-6 pb-6 md:pb-8">
+                                <p class="text-[#333333] text-[10px] md:text-[16px] font-medium leading-5 tracking-wide">“Thanks to their expert guidance, I not only passed my driving 
+                                    <br>test but also feel prepared to handle any situation on the road. 
+                                    <br>Big Rig is the best driving school i can recommend for all levels 
+                                    <br>of training.” 
+
+                                </p>
+                            </div>
+                            <div class="flex place-content-center pt-2 pb-2 md:pb-4">
+                                <div>
+                                    <div class="flex place-content-center">
+                                        <img src="./asset/2ndimgtest.png" alt="">
+                                    </div>
+                                    <p class="text-[#333333] text-[14px] md:text-[16px] font-bold mt-2 text-center">John Doe</p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                      <!-- 333 -->
+                    <div class="swiper-slide bg-white border border-[#808080] rounded-[15px] h-fit py-8">
+                        <div>
+                            <div class="flex gap-3 place-content-center">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                                <img src="./asset/5star.png" alt="">
+                            </div>
+                            <div class="flex place-content-center pt-6 pb-6 md:pb-8">
+                                <p class="text-[#333333] text-[10px] md:text-[16px] font-medium leading-5 tracking-wide">“Thanks to their expert guidance, I not only passed my driving 
+                                    <br>test but also feel prepared to handle any situation on the road. 
+                                    <br>Big Rig is the best driving school i can recommend for all levels 
+                                    <br>of training.” 
+
+                                </p>
+                            </div>
+                            <div class="flex place-content-center pt-2 pb-2 md:pb-4">
+                                <div>
+                                    <div class="flex place-content-center">
+                                        <img src="./asset/testimonialimg.png" alt="">
+                                    </div>
+                                    <p class="text-[#333333] text-[14px] md:text-[16px] font-bold mt-2 text-center">John Doe</p>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                      <!-- 444 -->
+                     <div class="swiper-slide bg-white border border-[#808080] rounded-[15px] h-fit py-8">
+                            <div>
+                                <div class="flex gap-3 place-content-center">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                </div>
+                                <div class="flex place-content-center pt-6 pb-6 md:pb-8">
+                                    <p class="text-[#333333] text-[10px] md:text-[16px] font-medium leading-5 tracking-wide">“Thanks to their expert guidance, I not only passed my driving 
+                                        <br>test but also feel prepared to handle any situation on the road. 
+                                        <br>Big Rig is the best driving school i can recommend for all levels 
+                                        <br>of training.” 
+
+                                    </p>
+                                </div>
+                                <div class="flex place-content-center pt-2 pb-2 md:pb-4">
+                                    <div>
+                                        <div class="flex place-content-center">
+                                            <img src="./asset/2ndimgtest.png" alt="">
+                                        </div>
+                                        <p class="text-[#333333] text-[14px] md:text-[16px] font-bold mt-2 text-center">John Doe</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                      <!-- 555 -->
+                     <div class="swiper-slide bg-white border border-[#808080] rounded-[15px] h-fit py-8">
+                            <div>
+                                <div class="flex gap-3 place-content-center">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                    <img src="./asset/5star.png" alt="">
+                                </div>
+                                <div class="flex place-content-center pt-6 pb-6 md:pb-8">
+                                    <p class="text-[#333333] text-[10px] md:text-[16px] font-medium leading-5 tracking-wide">“Thanks to their expert guidance, I not only passed my driving 
+                                        <br>test but also feel prepared to handle any situation on the road. 
+                                        <br>Big Rig is the best driving school i can recommend for all levels 
+                                        <br>of training.” 
+
+                                    </p>
+                                </div>
+                                <div class="flex place-content-center pt-2 pb-2 md:pb-4">
+                                    <div>
+                                        <div class="flex place-content-center">
+                                            <img src="./asset/testimonialimg.png" alt="">
+                                        </div>
+                                        <p class="text-[#333333] text-[14px] md:text-[16px] font-bold mt-2 text-center">John Doe</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                      <!-- <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div> -->
+                    </div>
+                    <div class="swiper-pagination "></div>
+                  </div>
+
+                
+            </div>
+            <!-- slider end !!!! -->
+          </div>
+          <!-- ended -->
+
+
+
+
+          <!-- footer -->
+           <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-[#333333] pt-20 pb-44 px-4 md:pl-16 md:pr-12">
+                <div class="">
+                    <h4 class="">
+                        <img src="./asset/nobglogo.png" alt="" class="h-[65px] w-[100px] lg:h-[70px] lg:w-[120px]">
+                    </h4>
+                    <p class="text-white text-[12px] font-medium mt-3 text-opacity-80">Transform your driving skills<br> 
+                        with our professional drivers.</p>
+                </div>
+
+                <!-- 22 -->
+                <div class="grid grid-cols-3 md:grid-cols-2 ">
+                    <div>
+                        <h4 class="text-white text-[24px] font-bold font-serif mb-8">LINKS </h4>
+                        <div class="">
+                            <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Programs</a></p>
+                            <p class="mb-2"><a href="./html/Aboutus.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">About Us</a></p>
+                            <p class="mb-2"><a href="#" class="text-white text-[16px] font-medium  hover:text-opacity-75">Career</a></p>
+                            <p class="mb-2"><a href="./html/Pricing.html" class="text-white text-[16px] font-medium  hover:text-opacity-75">Pricing</a></p>
+                        </div>
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        <h4 class="text-white text-[24px] font-bold font-serif mb-8">ADDRESS</h4>
+                        <div>
+                            <div class="flex  mb-4">
+                                <img src="./asset/fmail.png" alt="" class="h-fit my-auto">
+                                <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">Bigrigschool@gmail.com</p>
+                            </div>
+                            <div class="flex mb-4">
+                                <img src="./asset/fcontact.png" alt="" class="h-fit my-auto">
+                                <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">080-000-000-00</p>
+                            </div>
+                            <div class="flex  mb-2">
+                                <img src="./asset/flocation.png" alt="" class="h-fit my-auto pl-2">
+                                <p class="h-fit my-auto text-white text-[14px] font-medium ml-4">1345, LOREM IPSUM,<br> 
+                                    LOREM, LOREM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 333 -->
+                <div class="">
+                    <h4 class="text-white text-[24px] font-bold font-serif mb-8">NEWSLETTER</h4>
+
+                    <div class="bg-white flex px-2 rounded-[15px]">
+                        <input type="email" name="" id="" placeholder="Enter your email" class="h-fit rounded-[15px] px-1 focus:ring-0 focus:outline-none ring-0 my-auto py-4 w-full placeholder:text-black placeholder:text-[12px]">
+                        <img src="./asset/fright.png" alt="" class="h-fit my-auto bg-[#EE0000] py-3 px-4 rounded-[10px]">
+                    </div>
+                </div>
+           </div>
+           <!--  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1, 
+            spaceBetween: 20, 
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                
+                1024: {
+                slidesPerView: 2, 
+                spaceBetween: 40, 
+                },
+                
+                768: {
+                slidesPerView: 1, 
+                spaceBetween: 20, 
+                },
+                
+                640: {
+                slidesPerView: 1, 
+                spaceBetween: 10,
+                },
+            },
+        });
+      </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
