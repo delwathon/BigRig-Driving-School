@@ -18,7 +18,6 @@ window.Swal = Swal;
 
 // Alpine.start()
 
-import './scripts/main';
 
 
 
