@@ -1,0 +1,22 @@
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  @apply hidden;
+}
+
+.swiper-box {
+  @apply !py-10 !px-2;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !top-6 !h-8 !w-8 flex items-center justify-center;
+}
+
+.swiper-button-prev {
+  @apply !left-[initial] !right-11;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply !hidden;
+}

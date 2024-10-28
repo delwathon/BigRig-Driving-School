@@ -1,0 +1,17 @@
+export const colors = {
+  primary: 'var(--color-primary-500)',
+  primaryLight: 'var(--color-primary-400)',
+  primaryLighter: 'var(--color-primary-50)',
+  accent: 'var(--color-emerald-500)',
+  success: 'var(--color-emerald-500)',
+  info: 'var(--color-sky-500)',
+  warning: 'var(--color-amber-500)',
+  danger: 'var(--color-rose-500)',
+  purple: 'var(--color-violet-500)',
+  blue: 'var(--color-indigo-500)',
+  green: 'var(--color-green-500)',
+  yellow: 'var(--color-yellow-500)',
+  orange: 'var(--color-orange-500)',
+  light: 'var(--light-text)',
+  areaGradient: 'var(--area-gradient-base)',
+}
