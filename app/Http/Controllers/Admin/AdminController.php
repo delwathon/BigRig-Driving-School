@@ -30,10 +30,10 @@ class AdminController extends Controller {
         $widget['email_unverified_users']  = User::emailUnverified()->count();
         $widget['mobile_unverified_users'] = User::mobileUnverified()->count();
         $widget['total_games']             = Service::count();
-        $widget['total_played']            = GameLog::sum('invest');
-        $widget['total_invest_amount']     = GameLog::sum('invest');
-        $widget['total_win_amount']        = GameLog::win()->sum('win_amo');
-        $widget['total_loss_amount']       = GameLog::loss()->sum('invest');
+        $widget['total_played']            = 0;//GameLog::sum('invest');
+        $widget['total_invest_amount']     = 0;//GameLog::sum('invest');
+        $widget['total_win_amount']        = 0;//GameLog::win()->sum('win_amo');
+        $widget['total_loss_amount']       = 0;//GameLog::loss()->sum('invest');
         $widget['total_profit']            = $widget['total_invest_amount'] - $widget['total_win_amount'];
 
         // user Browsing, Country, Operating Log

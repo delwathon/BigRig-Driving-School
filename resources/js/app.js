@@ -1,4 +1,5 @@
-require('./bootstrap');
+// require('./bootstrap');
+import './bootstrap';
 import 'flowbite';
 import 'apexcharts';
 import Swal from 'sweetalert2'
