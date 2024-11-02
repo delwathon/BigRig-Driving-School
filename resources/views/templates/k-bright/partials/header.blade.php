@@ -83,6 +83,9 @@ $socialIcon  = getContent('social_icon.element', false, null, true);
 
 
 
+@if (request()->routeIs('home'))
+    
+
 <div class="relative h-[330px]  md:h-[600px] lg:h-[850px]">
     <!-- Navbar -->
     <nav class="bg-transparent p-4">
@@ -96,13 +99,15 @@ $socialIcon  = getContent('social_icon.element', false, null, true);
             <!-- Navbar Links for large screens, hidden on small screens -->
          
             <div class="hidden md:flex items-center md:space-x-[25px] lg:space-x-[50px]">
+
+                <a href="{{ route('pricing') }}" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">@lang('Pricing')</a>
+                <a href="{{ route('blog') }}" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">@lang('Blog')</a>
+                <a href="{{ route('contact') }}" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">@lang('Contact')</a>
                 @foreach ($pages as $k => $data)
                     <a href="{{ route('pages', [$data->slug]) }}" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">{{ __($data->name) }}</a>
 
                 @endforeach
-                {{-- <a href="./html/Pricing.html" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">Pricing</a>
-                <a href="#" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">Testimonials</a>
-                <a href="./html/Contact.html" class="text-white md:text-[14px] lg:text-[18px] hover:text-white hover:text-opacity-30">Contact</a> --}}
+               
             </div>
 
             <!-- Get Started button for large screens -->
@@ -145,13 +150,37 @@ $socialIcon  = getContent('social_icon.element', false, null, true);
         <!-- Mobile Menu, positioned over other content (absolute positioning) -->
         <div id="navbar-menu" class="hidden">
             <div  class="absolute inset-x-0 top-12 bg-gray-900 bg-opacity-50 text-white p-4  md:hidden flex flex-col space-y-4 z-50">
-                <a href="./html/Aboutus.html" class="text-white text-[15px] hover:text-white hover:text-opacity-30">About</a>
-                <a href="./html/Pricing.html" class="text-white text-[15px] hover:text-white hover:text-opacity-30">Pricing</a>
-                <a href="#" class="text-white text-[15px] hover:text-white hover:text-opacity-30">Testimonials</a>
-                <a href="./html/Contact.html" class="text-white text-[15px] hover:text-white hover:text-opacity-30">Contact</a>
-                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55 ">
-                    <a href="./html/Registration.html" class="text-red-500">Get Started</a>
+                <a href="{{ route('pricing') }}">@lang('Pricing')</a>
+                <a href="{{ route('blog') }}">@lang('Blog')</a>
+                <a href="{{ route('contact') }}">@lang('Contact')</a>
+
+                @foreach ($pages as $k => $data)
+                <a href="{{ route('pages', [$data->slug]) }}" class="text-white text-[15px] hover:text-white hover:text-opacity-30">{{ __($data->name) }}</a>
+
+            @endforeach
+               
+                @auth
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.home') }}" class="mx-3">Dashboard</a>
                 </button>
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.logout') }}" class="mx-3">Logout</a>
+                </button>
+                @else
+                @if ($general->registration)
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.register') }}" class="mx-3">Get Started</a>
+                </button>
+                @endif
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.login') }}" class="mx-3">Login</a>
+                    </button>
+                @endauth
+                
             </div>
         </div>
     </nav>
@@ -180,6 +209,116 @@ $socialIcon  = getContent('social_icon.element', false, null, true);
     </div>
 </div>
 
+@else
+    
+
+
+<div class="h-[100px] z-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-xl fixed z-50 w-full px-4 py-6 md:py-4">
+        <div class="container mx-auto flex items-center justify-between">
+
+            <!-- Logo on the left -->
+         
+            <a href="{{route('home')}}" class="">
+                <img src="{{ getImage(getFilePath('logoIcon') . '/logo.png') }}" alt="" class="h-[40px] md:h-[50px] md:w-[90px] lg:h-[70px] lg:w-[120px]">
+            </a>
+
+            <!-- Navbar Links for large screens, hidden on small screens -->
+            <div class="hidden md:flex items-center md:space-x-[25px] lg:space-x-[50px]">
+                <a href="{{ route('pricing') }}"  class="text-[#FF0000] md:text-[14px] lg:text-[18px] hover:text-[#FF0000]">@lang('Pricing')</a>
+                <a href="{{ route('blog') }}"  class="text-[#FF0000] md:text-[14px] lg:text-[18px] hover:text-[#FF0000]">@lang('Blog')</a>
+                <a href="{{ route('contact') }}"  class="text-[#FF0000] md:text-[14px] lg:text-[18px] hover:text-[#FF0000]">@lang('Contact')</a>
+
+
+                    @foreach ($pages as $k => $data)
+                    <a href="{{ route('pages', [$data->slug]) }}" class="text-[#FF0000] md:text-[14px] lg:text-[18px] hover:text-[#FF0000]">{{ __($data->name) }}</a>
+
+                @endforeach
+                
+            </div>
+
+            <!-- Get Started button for large screens -->
+            <div class="hidden md:flex">
+              
+
+
+                    @auth
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+ 
+                    <a href="{{ route('user.home') }}" class="mx-3">Dashboard</a>
+                    </button>
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+ 
+                    <a href="{{ route('user.logout') }}" class="mx-3">Logout</a>
+                    </button>
+                    @else
+                    @if ($general->registration)
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+ 
+                    <a href="{{ route('user.register') }}" class="mx-3">Get Started</a>
+                    </button>
+                    @endif
+                    <button class="bg-[#FF0000] text-white md:px-8 md:py-2 lg:px-10 lg:py-3 rounded-full md:text-[10px] lg:text-[14px] font-bold hover:bg-opacity-55 ">
+ 
+                    <a href="{{ route('user.login') }}" class="mx-3">Login</a>
+                        </button>
+                    @endauth
+                  
+            </div>
+
+            <!-- Toggler button for mobile screens -->
+            <div class="md:hidden flex items-center">
+                <button id="navbar-toggler" class="text-[#333333] focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu, positioned over other content (absolute positioning) -->
+        <div id="navbar-menu" class="hidden">
+            <div id="navbar-menu" class="absolute inset-x-0 top-12 bg-white bg-opacity-50 text-white p-4  md:hidden flex flex-col space-y-4 z-50">
+                
+                <a href="{{ route('pricing') }}" class="text-[#FF0000] text-[15px] hover:text-[#FF0000]">@lang('Pricing')</a>
+                <a href="{{ route('blog') }}" class="text-[#FF0000] text-[15px] hover:text-[#FF0000]">@lang('Blog')</a>
+                <a href="{{ route('contact') }}" class="text-[#FF0000] text-[15px] hover:text-[#FF0000]">@lang('Contact')</a>
+                @foreach ($pages as $k => $data)
+                    <a href="{{ route('pages', [$data->slug]) }}" class="text-[#FF0000] text-[15px] hover:text-[#FF0000]">{{ __($data->name) }}</a>
+
+                @endforeach
+
+
+
+                @auth
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.home') }}" class="mx-3">Dashboard</a>
+                </button>
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.logout') }}" class="mx-3">Logout</a>
+                </button>
+                @else
+                @if ($general->registration)
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.register') }}" class="mx-3">Get Started</a>
+                </button>
+                @endif
+                <button class="bg-[#FF0000] text-white px-10 py-3 rounded-full text-[14px] font-bold hover:bg-opacity-55">
+
+                <a href="{{ route('user.login') }}" class="mx-3">Login</a>
+                    </button>
+                @endauth
+                
+                
+            </div>
+        </div>
+    </nav>
+</div>
+@endif
 
 <div class="py-8 px-4 md:px-8 lg:px-24">
     <div class="flex place-content-center">

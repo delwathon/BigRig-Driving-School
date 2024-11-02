@@ -33,7 +33,7 @@ Route::controller(SiteController::class)->group(function () {
 
     Route::get('/cookie/accept', 'cookieAccept')->name('cookie.accept');
 
-    Route::get('games', 'games')->name('games');
+    Route::get('prices', 'games')->name('pricing');
 
     Route::get('blog', 'blog')->name('blog');
     Route::get('blog/{slug}/{id}', 'blogDetails')->name('blog.details');
